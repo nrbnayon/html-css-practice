@@ -1,0 +1,168 @@
+* {
+  margin: 1%;
+  /* padding: 0; */
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.header {
+  width: 100%;
+  background-color: rgb(8, 8, 8);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  font-weight: 600;
+  width: 100%;
+  border-radius: 10px;
+  text-decoration: underline;
+  box-shadow: 2px 5px 10px royalblue;
+}
+.back-img {
+  height: 30vh;
+  background-image: url(../assets/At_the_bottom_write_LWN_Light_neon_in_large_hu.jpg);
+  /* background-repeat: no-repeat; */
+  filter: brightness(1);
+  /* background-size: cover; */
+  /* background-size: contain; */
+  background-size: 200px;
+  background-position: center;
+  /* object-fit: cover; */
+  border-radius: 4px;
+}
+.cssfn {
+  border: 1px solid black;
+  padding: 8px;
+  color: red;
+  border-radius: 10px;
+}
+#embedded {
+  font-size: large;
+  font-weight: bolder;
+}
+.player {
+  text-align: right;
+  color: rgb(0, 225, 255);
+  font-weight: 600;
+}
+#idname {
+  background-color: yellow;
+}
+.classname {
+  background-color: red;
+  color: white;
+  font-weight: 600;
+  width: 100%;
+}
+/* p {
+  background: red;
+  width: 100%;
+} */
+#second {
+  font-size: 24px;
+  background-color: aqua;
+  text-align: right;
+}
+.five {
+  background-color: yellow;
+  font-size: 20px;
+  text-align: center;
+}
+.bold {
+  font-weight: 800;
+}
+.blog {
+  background-color: aqua;
+  padding: 3%;
+  border: 10px solid salmon;
+  border-radius: 5px;
+  border-bottom: none;
+  transition: transform 0.5s, box-shadow 0.3s;
+}
+.first-blog {
+  background-color: aquamarine;
+  border: 20px solid tomato;
+  /* border-top: 20px solid tomato; */
+  border-radius: 20px;
+  padding: 10px;
+  transition: transform 0.5s, box-shadow 0.3s;
+  margin: 15px;
+  text-align: justify;
+}
+.second-blog {
+  background-color: aquamarine;
+  border-left: 20px solid salmon;
+  border-radius: 20px;
+  margin: 10px;
+  padding: 10px;
+  transition: transform 0.5s, box-shadow 0.3s;
+
+  box-shadow: 10px 10px 10px rgb(29, 22, 22);
+}
+.third-blog {
+  background-color: aquamarine;
+  border-right: 20px solid tomato;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 15px;
+  transition: transform 0.5s, box-shadow 0.3s;
+}
+.blog:hover,
+.third-blog:hover,
+.first-blog:hover,
+.second-blog:hover,
+.fourth-blog:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.fourth-blog {
+  background-color: aquamarine;
+  border-bottom: 20px solid salmon;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px;
+  transition: transform 0.5s, box-shadow 0.3s;
+}
+
+.btn {
+  margin-bottom: 50px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login-btn {
+  background: linear-gradient(45deg, #3498db, #8831ad);
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.7rem 1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+
+.login-btn::before {
+  content: "";
+  position: absolute;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  mix-blend-mode: overlay;
+  transition: opacity 0.3s;
+}
+.login-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.login-btn:hover::before {
+  opacity: 0.5;
+}

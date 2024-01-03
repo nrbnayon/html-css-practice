@@ -1,0 +1,171 @@
+* {
+  font-family: sans-serif;
+  /* margin: 0; */
+  box-sizing: border-box;
+}
+.bg-theme {
+  height: 100vh;
+  width: 100%;
+  background-image: url(../assets/programminghero_logo.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  filter: brightness(1.5);
+  /* background: linear-gradient(
+    to bottom right,
+    #1f0b36,
+    #1f0b36,
+    #1f0b36,
+    #1f0b36
+  ); */
+}
+.head-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  padding: 0 2%;
+  border-radius: 8px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  font-size: 17px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+.logo img {
+  width: 50px;
+  height: 50px;
+  margin: 1px 10px 1px 10px;
+  padding: 4px;
+  border-radius: 50%;
+}
+
+.nav-right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-right a {
+  text-decoration: none;
+  color: white;
+  font-weight: 200;
+  font-size: 14px;
+  padding: 5px;
+  margin: 2px 7px;
+  transition: transform 2s;
+}
+.nav-right a:hover {
+  border-bottom: 1px solid aqua;
+  transform: scale(1.1);
+  /* box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); */
+}
+.login {
+  margin: 12vh 50vw 0 7vw;
+  padding: 5px;
+}
+.login h3 {
+  margin-top: 0;
+  color: rgb(156, 108, 158);
+  font-size: 700;
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+}
+.login-form {
+  margin-top: 0;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 0;
+  padding: 50px;
+  padding-left: 30px;
+  border-radius: 20px;
+  background-color: rgba(4, 4, 41, 0.856);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+}
+
+.input-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.input-form input {
+  font-size: 17px;
+  padding: 17px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.cbox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+}
+.fill {
+  cursor: pointer;
+  font-size: 14px;
+  color: white;
+  margin-top: 5px;
+}
+.cbox a {
+  cursor: pointer;
+  font-size: 17px;
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px solid aqua;
+  box-shadow: 2px rgba(0, 0, 0, 0.9);
+}
+.login-btn {
+  background: linear-gradient(45deg, #172125, #1e002b);
+  border: 1px solid rgb(100, 100, 100);
+  border-radius: 0.5rem;
+  padding: 1rem 1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 2s, box-shadow 1s;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.login-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  mix-blend-mode: overlay;
+  transition: opacity 0.3s;
+}
+.login-btn:hover {
+  transform: scale(1.05);
+  background: linear-gradient(45deg, #3498db, #8831ad);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.login-btn:hover::before {
+  opacity: 0.5;
+}
+
+.new-reg {
+  text-align: center;
+  margin: 10px 0 0;
+  color: white;
+  font-size: 14px;
+}
+.new-reg a {
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 700;
+  margin-left: 5px;
+}
